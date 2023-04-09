@@ -1,0 +1,9 @@
+{
+    "greetings": "Hey there, I'm",
+    "name": "Gustavo Rodrigues",
+    "description": "I'm fullstack developer living in Portugal and working remotely for companies around the globe.",
+    "contact": {
+        "title": "Contact me:",
+        "message": "or drop a line: gustavocr.developer@gmail.com"
+    }
+}
