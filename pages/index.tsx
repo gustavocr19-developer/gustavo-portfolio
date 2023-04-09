@@ -19,21 +19,21 @@ export default function Home() {
     if (!data) return <div>Loading...</div>
 
     return (
-        <main className={`${poppins.className} flex w-full justify-around`}>
+        <div className={`${poppins.className} flex w-full justify-around`}>
             <div className="flex flex-col p-8 max-w-3xl gap-y-16">
                 <div className="flex flex-col gap-y-7">
-                    <h2 className="text-lg text-blue-600 dark:text-white">
+                    <h2 className="text-lg font-normal text-neutral-700 dark:text-white">
                         {data.greetings}
                     </h2>
-                    <h1 className="text-5xl text-blue-600 dark:text-white">
+                    <h1 className="text-5xl text-sky-600 dark:text-white">
                         {data.name}
                     </h1>
-                    <p className="text-lg text-neutral-700">
+                    <p className="text-xl text-neutral-700">
                         {data.description}
                     </p>
                 </div>
                 <div className="relative border border-slate-200 rounded p-8">
-                    <span className="absolute mt-[-50px] text-lg bg-white text-black rounded p-0.5 uppercase">
+                    <span className="absolute mt-[-50px] text-lg bg-white text-black rounded px-2 uppercase">
                         {data.contact.title}
                     </span>
                     <div className="flex gap-x-4 text-5xl mb-4">
@@ -76,6 +76,6 @@ export default function Home() {
                     height={350}
                 />
             </div>
-        </main>
+        </div>
     )
 }
